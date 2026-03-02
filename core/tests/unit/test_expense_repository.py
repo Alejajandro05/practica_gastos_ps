@@ -73,7 +73,7 @@ def test_get_by_id_returns_none_if_not_found():
     Se verifica que buscar un id inexistente no produce error, sino que devuelve None.
     """
     repo = InMemoryExpenseRepository()
-    
+
     resultado = repo.get_by_id(99)
 
     assert resultado is None
